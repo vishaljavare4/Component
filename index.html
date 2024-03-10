@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cart</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-box" id="left-box">
+      <h2 style="text-align: center;">Products</h2>
+      <ul id="products-list">
+        <li style="background-color: rgb(187, 187, 187); padding: 11px; width: 324px; margin-left: 170px;" id="product-1">
+          Product-1 - 100
+          <button style="margin-left: 34px;" class="remove-btn" onclick="removeFromCart(1)">-</button>
+          <span class="quantity" id="quantity-1">0</span>
+          <button class="add-btn" onclick="addToCart(1)">+</button>
+        </li>
+        <li style="background-color: rgb(187, 187, 187); padding: 11px; width: 324px; margin-left: 170px;" id="product-2">
+          Product-2 - 200
+          <button style="margin-left: 34px;" class="remove-btn" onclick="removeFromCart(2)">-</button>
+          <span class="quantity" id="quantity-2">0</span>
+          <button class="add-btn" onclick="addToCart(2)">+</button>
+        </li>
+        <li style="background-color: rgb(187, 187, 187); padding: 11px; width: 324px; margin-left: 170px;" id="product-3">
+          Product-3 - 300
+          <button style="margin-left: 34px;" class="remove-btn" onclick="removeFromCart(3)">-</button>
+          <span class="quantity" id="quantity-3">0</span>
+          <button class="add-btn" onclick="addToCart(3)">+</button>
+        </li>
+      </ul>
+    </div>
+    <div class="right-box" id="right-box">
+      <h2>Cart</h2>
+      <div id="cart">No Product added to the cart</div>
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
